@@ -880,7 +880,7 @@ a.actions-header__location {
     }
 }
 .show {
-    background: url('/img/bgc.jpg') center / cover no-repeat;
+    background: url('/worldofshows/img/bgc.jpg') center / cover no-repeat;
     padding-top: calc(15px + 30 * (100vw / 1280));
     padding-bottom: calc(15px + 15 * (100vw / 1280));
     position: relative;
