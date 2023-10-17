@@ -400,7 +400,7 @@ a.actions-header__location {
     height: 100%;
     top: -10%;
     left: 0%;
-    background: url('/worldofshows/img/stage2.avif') 50% 100% / cover no-repeat;
+    background: url('../img/stage2.avif') 50% 100% / cover no-repeat;
     animation: stage 3s 1s ease forwards;
 }
 .parallax__cu {
@@ -408,7 +408,7 @@ a.actions-header__location {
     z-index: 999;
     height: 110%;
     width: 100%;
-    background: url('/worldofshows/img/redfull.png') 0 0 / cover no-repeat;
+    background: url('../img/redfull.png') 0 0 / cover no-repeat;
     animation: up 2.5s 1s ease forwards;
 }
 .parallax__cl {
@@ -891,7 +891,7 @@ a.actions-header__location {
     }
 }
 .show {
-    background: url('../worldofshows/img/bgc.jpg') center / cover no-repeat;
+    background: url('../img/bgc.jpg') center / cover no-repeat;
     padding-top: calc(15px + 30 * (100vw / 1280));
     padding-bottom: calc(15px + 15 * (100vw / 1280));
     position: relative;
@@ -1033,7 +1033,7 @@ a.actions-header__location {
 
 
 .content {
-    background: url('../worldofshows/img/bgc1.jpg');
+    background: url('../img/bgc1.jpg');
     position: relative;
     z-index: 10;
     padding-top: 2rem;
@@ -1069,7 +1069,7 @@ a.actions-header__location {
 .content__gallery {
 }
 .gallery {
-    background: url('../worldofshows/img/bgc2.jpg');
+    background: url('../img/bgc2.jpg');
     position: relative;
     z-index: 2;
 }
@@ -1135,10 +1135,6 @@ a.actions-header__location {
     background-color: #141414;
     position: relative;
     z-index: 5;
-}
-.footer__text {
-    background: url('img/bgc21.jpg') top / cover no-repeat;
-    padding: 2rem 0;
 }
 .text-footer__title {
     text-align: center;
