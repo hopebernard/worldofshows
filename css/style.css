@@ -1069,7 +1069,7 @@ a.actions-header__location {
 .content__gallery {
 }
 .gallery {
-    background: url('../worldofshows/img/bgc2.jpg');
+    background: url('/worldofshows/img/bgc2.jpg');
     position: relative;
     z-index: 2;
 }
