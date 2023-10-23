@@ -48,7 +48,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit;}
     z-index: 20;
     top: -30%;
     background: linear-gradient(0deg, rgb(34, 34, 34) 0%, rgb(48, 48, 48) 100%);
-    animation: down 1s ease 2s forwards;
+    animation: down 1s ease 0s forwards;
 }
 @keyframes down {
     0%{
@@ -401,9 +401,10 @@ a.actions-header__location {
     top: -10%;
     left: 0%;
     background: url('../img/stage2.avif') 50% 100% / cover no-repeat;
-    animation: stage 3s 1s ease forwards;
+    animation: stage 3s 0s ease forwards;
 }
 .parallax__cu {
+    display: none;
     position: absolute;
     z-index: 999;
     height: 110%;
@@ -412,6 +413,7 @@ a.actions-header__location {
     animation: up 2.5s 1s ease forwards;
 }
 .parallax__cl {
+    display: none;
     position: absolute;
     z-index: 11;
     height: 100%;
@@ -421,6 +423,7 @@ a.actions-header__location {
     height: 120%;
 }
 .parallax__cr {
+    display: none;
     position: absolute;
     right: 0;
     z-index: 11;
@@ -431,12 +434,14 @@ a.actions-header__location {
     height: 120%;
 }
 .parallax__ch {
+    display: none;
     position: absolute;
     z-index: 4;
     bottom: 0;
     animation: chairs 4s 0s ease forwards;
 }
 .parallax__ch img {
+    display: none;
     width: 100vw;
     max-height: 20rem;
 }
@@ -527,7 +532,7 @@ a.actions-header__location {
 
 .outer-wrapper{
 	position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 25%;
     width: 100%;
 	transform: translate(-80%,-80%);
@@ -563,7 +568,7 @@ a.actions-header__location {
 	transform: translate(-85%,-85%);
 	width: 160%;
 	height: 160%;
-	transition: transform 1s 4s linear;
+	transition: transform 3s linear 1s;
 }
 .inner-wrapper:before{
     content: "";
@@ -617,20 +622,31 @@ a.actions-header__location {
     z-index: 1;
     justify-content: space-between;
     top: 90%;
-    animation: opacity 5s ease forwards;
+    animation: opacity 3s ease forwards;
 }
 @keyframes opacity {
     0%{
         opacity: 0;
     }
-    90%{
+    50%{
         opacity: 0;
     }
     100%{
         opacity: 1;
     }
 }
+.buttons-extra{
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+    top: calc(20px + 60 * (100vw / 1280));
+    left: -1%;
+    animation: opacity 3s ease forwards;
+}
 .button-1,
+.button-2,
 .button-3 {
     margin: 0 1rem;
     display: flex;
@@ -659,13 +675,16 @@ a.actions-header__location {
 .wave-btn:hover .wave-btn__waves{
     top: -50px;
 }
+._extra{
+    width: 280px;
+}
 .wave-btn__text {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
     font-weight: 700;
     position: relative;
-    z-index: 11;
+    z-index: 99;
     padding: 0 0.5rem;
 }
 .wave-btn__waves {
@@ -723,6 +742,18 @@ a.actions-header__location {
     background-color: rgba(167, 194, 76, 0.5);
     animation: waves 10s infinite linear 0.6s;
 } 
+.wave-btn__waves-5::before{
+    background-color: rgba(255, 35, 35, 0);
+    animation: waves 5s infinite linear 0.8s;
+}
+.wave-btn__waves-5::after{
+    background-color: rgba(255, 120, 120, 0);
+    animation: waves 10s infinite linear 0.8s;
+}
+.wave-btn__text-5 {
+    font-weight: 800;
+    font-size: 1.1rem;
+}
 @keyframes waves {
     0%{
         transform: translate3d(-50%,-96%,0) rotate(0deg) scale(1);
@@ -755,6 +786,12 @@ a.actions-header__location {
 .wave-btn__waves-4:hover{
     box-shadow: 0 0 20px rgba(119, 172, 40, 0.9);
 }
+.wave-btn__waves-5 {
+    background: url('../img/xmas_btn.jpg') 0 0 / cover no-repeat;
+}
+.wave-btn__text-5{
+    color: rgb(218, 255, 216);
+}
 @media(max-width: 1060px) {
     .button-1,
     .button-3{
@@ -765,6 +802,10 @@ a.actions-header__location {
     }
     .wave-btn{
         margin: 1rem 5rem;
+    }
+    .buttons-extra{
+        top: calc(20px + 60 * (100vw / 1280));
+        left: 25%;
     }
 }
 @media(max-width: 860px) {
@@ -785,6 +826,10 @@ a.actions-header__location {
         justify-content: start;
         align-items: center;
     }
+    .buttons-extra{
+        top: calc(45px + 60 * (100vw / 1280));
+        left: 10%;
+    }
     .wave-btn{
         margin: 0 0 0.2rem 0;
         width: calc(220px + 500 * (100vw / 1280));
@@ -793,9 +838,51 @@ a.actions-header__location {
         width: calc(220px + 500 * (100vw / 1280));
     }
 }
-
-
-
+@media(max-width: 610px){
+    .buttons-extra{
+        top: calc(110px + 60 * (100vw / 1280));
+        left: calc(0px + 20 * (100vw / 1280));
+    }
+}
+@media(max-width: 430px){
+    .buttons-extra{
+        left: 0%;
+    }
+    ._extra{
+        width: calc(200px + 180 * (100vw / 430));
+    }
+}
+@media(max-width: 400px){
+    .buttons-extra{
+        left: -2%;
+    }
+    ._extra{
+        width: calc(200px + 180 * (100vw / 430));
+    }
+}
+@media(max-width: 370px){
+    .buttons-extra{
+        left: -4%;
+    }
+    ._extra{
+        width: calc(200px + 180 * (100vw / 400));
+    }
+}
+@media(max-width: 360px){
+    .buttons-extra{
+        left: -5%;
+    }
+}
+@media(max-width: 330px){
+    .buttons-extra{
+        left: -10%;
+    }
+}
+@media(max-width: 290px){
+    .buttons-extra{
+        left: -12%;
+    }
+}
 
 
 
@@ -901,8 +988,6 @@ a.actions-header__location {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 2rem;
-}
-.show__slider {
 }
 .swiper {
     max-height: 100vh;
@@ -1066,16 +1151,21 @@ a.actions-header__location {
 .text__subtitle p:last-child{
     margin-bottom: 0;
 }
-.content__gallery {
-}
 .gallery {
-    background: url('../img/bgc2.jpg');
+    background: url('../img/bgc3.jpg');
     position: relative;
     z-index: 2;
+    padding: 1rem 0;
 }
-.gallery__title-1 {
+.gallery__title {
+    color: white;
+    font-size: 2rem;
+}
+.gallery__title:hover{
+    color: goldenrod;
 }
 .gallery__items {
+    padding: 0.8rem 0 0 0;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1091,6 +1181,41 @@ a.actions-header__location {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+@media(max-width: 5000px) {
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    }
+}
+@media(max-width: 3000px) {
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+}
+@media(max-width: 2700px) {
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
+@media(max-width: 2400px) {
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+@media(max-width: 2100px) {
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+@media(max-width: 1810px) {
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+@media(max-width: 1515px) {
+    .gallery__items {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 @media(max-width: 1220px) {
     .gallery__items {
@@ -1132,34 +1257,22 @@ a.actions-header__location {
 
 
 .footer__sections{
+    width: 100%;
     background-color: #141414;
     position: relative;
     z-index: 5;
-}
-.text-footer__title {
-    text-align: center;
-    font-weight: 700;
-    font-size: calc(28px + 10 * (100vw / 1280));
-    line-height: 2rem;
-    color: goldenrod;
-    margin-bottom: 1.5rem;
-}
-.text-footer__text {
-    font-size: calc(18px + 4 * (100vw / 1280));
-    line-height: calc(25px + 10 * (100vw / 1280));
-    color:rgba(255, 255, 255, 0.8);
 }
 .footer__body {
     padding: 3rem 0;
 }
 .body-footer {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
 }
 .body-footer__row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10.9rem, 1fr));
-    gap: 4rem;
+    gap: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .body-footer__row:last-child{
@@ -1284,5 +1397,19 @@ a.actions-header__location {
     }
     .spoiler-item-footer__title._active span{
         transform: rotate(180deg);
+    }
+    ._container-b{
+        position: relative;
+        max-width: 100%;
+        left: 0%;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 300px) {
+    ._container-b{
+        position: relative;
+        max-width: 100%;
+        left: -3%;
+        margin: 0 auto;
     }
 }

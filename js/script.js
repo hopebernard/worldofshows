@@ -145,6 +145,48 @@ function initSliders() {
             }
         });
     }
+    if (document.querySelector('.thumbs-images')) {
+        const thumbsSwiper = new Swiper('.thumbs-images', {
+            loop: true,
+            observer: true,
+            observeParents: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            speed: 800, 
+            breakpoints: {
+                310: {
+                    direction: 'horizontal',
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                },
+                850: {
+                    direction: 'vertical',
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                },
+                992: {
+                    direction: 'horizontal',
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                },
+            }
+        });
+        new Swiper('.images-product__slider', {
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            thumbs: {
+                swiper: thumbsSwiper,
+            },
+            loop: true,
+            observer: true,
+            observeParents: true,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            speed: 800, 
+        });
+    }
 };
 
 window.addEventListener('load', function(e) {
