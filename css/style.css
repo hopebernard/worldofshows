@@ -822,13 +822,13 @@ a.actions-header__location {
     .buttons{
         display: flex;
         flex-direction: column;
-        top: 70%;
+        top: 65%;
         justify-content: start;
         align-items: center;
     }
     .buttons-extra{
         top: calc(45px + 60 * (100vw / 1280));
-        left: 10%;
+        left: calc(0px + 55 * (100vw / 610));
     }
     .wave-btn{
         margin: 0 0 0.2rem 0;
@@ -838,10 +838,20 @@ a.actions-header__location {
         width: calc(220px + 500 * (100vw / 1280));
     }
 }
-@media(max-width: 610px){
+@media(max-width: 580px){
     .buttons-extra{
         top: calc(110px + 60 * (100vw / 1280));
-        left: calc(0px + 20 * (100vw / 1280));
+        left: calc(0px + 50 * (100vw / 580));
+    }
+}
+@media(max-width: 510px){
+    .buttons-extra{
+        left: calc(0px + 20 * (100vw / 510));
+    }
+}
+@media(max-width: 460px){
+    .buttons-extra{
+        left: calc(0px + 10 * (100vw / 510));
     }
 }
 @media(max-width: 430px){

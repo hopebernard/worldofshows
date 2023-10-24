@@ -1,0 +1,39 @@
+.page__show{
+    padding-top: calc(40px + 100 * (100vw / 1280));
+}
+.show__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+.product-card{
+    max-width: fit-content;
+}
+.product-card__image-ibg img{
+    justify-content: center;
+    text-align: center;
+    height: 30rem;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+a.product-card__button {
+    min-width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.5rem;
+    background-color: orange;
+    text-align: center;
+    align-items: center;
+}
+.product-card{
+    padding: 0;
+}
+@media (max-width: 580px) {
+    .page__show{
+        padding-top: 9rem;
+    }
+}
