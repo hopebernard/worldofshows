@@ -1,0 +1,125 @@
+.content{
+    padding-top: calc(40px + 100 * (100vw / 1280));
+    padding-bottom: 0;
+    background: url('../img/contact.jpg') 50% 100% / cover no-repeat;
+    max-width: 100vw;
+}
+._container-d{
+    width: 80%;
+    margin: 0 auto;
+}
+.text__body{
+    padding: 1rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+.text__title{
+    line-height: 2.3rem;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+.text__subtitle{
+    letter-spacing: 4px;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+.sub__email,
+.sub__phone{
+    display: block;
+    color: aliceblue;
+}
+a.sub__phone{
+    margin-bottom: 2rem;
+}
+.text__body-1{
+    padding-right: 2rem;
+    letter-spacing: 2px;
+    line-height: 2.8rem;
+    text-align: right;
+    color: aliceblue;
+    position: relative;
+    bottom: -5%;
+    right: -10%;
+}
+.social-footer-1{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.3rem;
+}
+@media (max-width: 1100px) {
+    .content{
+        background: url('../img/contact-1.jpg') 50% 100% / cover no-repeat;
+    }
+    .text__body-1{
+        text-align: left;
+        bottom: 0%;
+        right: -3%;
+    }
+    .social-footer-1{
+        display: flex;
+        flex-direction: row;
+        gap: 1.3rem;
+    }
+}
+@media (max-width: 650px) {
+    .content{
+        background: url('../img/contact-2.jpg') 50% 100% / cover no-repeat;
+    }
+}
+@media (max-width: 580px) {
+    .content{
+        padding-top: 11rem;
+    }
+    .text__subtitle{
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 460px) {
+    .text__subtitle{
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+    }
+    ._container-d{
+        width: 90%;
+    }
+    .content{
+        background: url('../img/contact-3.jpg') 50% 100% / cover no-repeat;
+    }
+}
+@media (max-width: 430px) {
+    .text__subtitle{
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+    }
+    .text__text{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 370px) {
+    .text__subtitle{
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+    }
+    ._container-d{
+        width: 96%;
+    }
+    .text__text{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 330px) {
+    .text__subtitle{
+        letter-spacing: 1.3px;
+        font-size: 1rem;
+    }
+    ._container-d{
+        width: 97%;
+    }
+    .text__text{
+        line-height: 1.4rem;
+        font-size: 1rem;
+    }
+}
