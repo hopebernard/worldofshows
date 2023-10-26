@@ -1,0 +1,77 @@
+.content__price{
+    background: url('../img/pricebcg.jpg') 50% 100% / cover no-repeat;
+}
+.price__body{
+    background-color: #4e00006c;
+    margin-top: 9rem;
+    color: rgb(251, 255, 165);
+    border-radius: 20px;
+    padding: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.price__title{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.price__grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 0.5rem;
+}
+.table-product__title{
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.table-product__title span{
+    font-size: 1rem;
+}
+.table-product__text {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+.body-product__table {
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 20rem;
+}
+.table-product1{
+    color: rgb(224, 36, 36);
+    background-color: rgba(255, 255, 255, 0.79);
+}
+.table-product2{
+    color: rgb(30, 95, 193);
+    background-color: rgba(179, 255, 225, 0.79);
+}
+.table-product3{
+    color: rgb(169, 15, 156);
+    background-color: rgba(221, 186, 255, 0.79);
+}
+.table-product4{
+    color: rgb(228, 205, 35);
+    background-color: rgba(255, 132, 39, 0.79);
+}
+.table-product5{
+    color: rgb(0, 103, 17);
+    background-color: rgba(128, 255, 114, 0.79);
+}
+@media (max-width: 410px) {
+    .price__body{
+        background-color: #4e00006c;
+        padding: 2rem 0rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+    }
+    .table-product__text{
+        font-size: 1rem;
+    }
+}
