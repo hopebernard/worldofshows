@@ -43,9 +43,8 @@
     opacity: 1;
 }
 .thumbs-images__slide-ibg img {
-    max-height: 150px;
-    max-width: 150px;
-    object-fit: cover;
+    height: 150px;
+    width: fit-content;
 }
 
 
@@ -178,7 +177,7 @@
     }
     .thumbs-images__slide-ibg img{
         height: 130px;
-        max-width: 150px;
+        max-width: 100px;
     }
     .actions-product {
         display: block;
@@ -204,7 +203,7 @@
     }
     .thumbs-images__slide-ibg img{
         max-height: 200px;
-        width: fit-content;
+        width: 400px;
     }
     .table-product__text {
         display: grid;
@@ -221,7 +220,7 @@
     }
     .thumbs-images__slide-ibg img {
         max-height: 120px;
-        width: fit-content;
+        width: 100px;
     }
 }
 @media(max-width: 580px) {

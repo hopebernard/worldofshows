@@ -533,7 +533,7 @@ a.actions-header__location {
 .outer-wrapper{
 	position: absolute;
     z-index: 1;
-    top: 25%;
+    top: 10%;
     width: 100%;
 	transform: translate(-80%,-80%);
 	animation: rotateAnimation 15s ease infinite;
