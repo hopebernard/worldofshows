@@ -212,9 +212,6 @@
     }
 }
 @media(max-width: 650px) {
-    .images-product__slider{
-        max-height: calc(10px + 550 * (100vw / 850));
-    }
     .thumbs-images {
         max-width: calc(10px + 750 * (100vw / 850));
     }
