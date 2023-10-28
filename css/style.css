@@ -531,7 +531,7 @@ a.actions-header__location {
 
 
 .outer-wrapper{
-	position: fixed;
+	position: absolute;
     z-index: 1;
     top: 25%;
     width: 100%;
