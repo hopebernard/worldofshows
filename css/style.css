@@ -533,7 +533,7 @@ a.actions-header__location {
 .outer-wrapper{
 	position: absolute;
     z-index: 1;
-    top: 10%;
+    top: 15%;
     width: 100%;
 	transform: translate(-80%,-80%);
 	animation: rotateAnimation 15s ease infinite;
@@ -550,6 +550,24 @@ a.actions-header__location {
 	width: calc(250px + 200 * (100vw / 1280));
 	margin: 0 auto;
 	padding: 0;
+}
+@media (max-width: 1060px) {
+    .outer-wrapper{
+        top: 25%;
+    }
+    .img-container{
+        height: calc(150px + 200 * (100vw / 1280));
+        width: calc(150px + 200 * (100vw / 1280));
+    }
+}
+@media (max-width: 580px) {
+    .outer-wrapper{
+        top: 35%;
+    }
+    .img-container{
+        height: calc(150px + 150 * (100vw / 1280));
+        width: calc(150px + 150 * (100vw / 1280));
+    }
 }
 .img-rhombus{
 	overflow: hidden;
