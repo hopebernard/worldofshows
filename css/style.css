@@ -562,11 +562,11 @@ a.actions-header__location {
 }
 @media (max-width: 580px) {
     .outer-wrapper{
-        top: 35%;
+        top: 30%;
     }
     .img-container{
-        height: calc(150px + 150 * (100vw / 1280));
-        width: calc(150px + 150 * (100vw / 1280));
+        height: 215px;
+        width: 215px;
     }
 }
 .img-rhombus{
@@ -637,9 +637,9 @@ a.actions-header__location {
     overflow: hidden;
     display: flex;
     position: fixed;
+    top: 90%;
     z-index: 1;
     justify-content: space-between;
-    top: 90%;
     animation: opacity 3s ease forwards;
 }
 @keyframes opacity {
@@ -702,7 +702,7 @@ a.actions-header__location {
     letter-spacing: 6px;
     font-weight: 700;
     position: relative;
-    z-index: 99;
+    z-index: 1;
     padding: 0 0.5rem;
 }
 .wave-btn__waves {
@@ -840,7 +840,7 @@ a.actions-header__location {
     .buttons{
         display: flex;
         flex-direction: column;
-        top: 65%;
+        top: 70%;
         justify-content: start;
         align-items: center;
     }
@@ -849,6 +849,7 @@ a.actions-header__location {
         left: calc(0px + 55 * (100vw / 610));
     }
     .wave-btn{
+        height: 40px;
         margin: 0 0 0.2rem 0;
         width: calc(220px + 500 * (100vw / 1280));
     }
@@ -857,6 +858,9 @@ a.actions-header__location {
     }
 }
 @media(max-width: 580px){
+    .outer-wrapper{
+        top: 32.5%;
+    }
     .buttons-extra{
         top: calc(110px + 60 * (100vw / 1280));
         left: calc(0px + 50 * (100vw / 580));
