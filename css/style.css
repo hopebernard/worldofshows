@@ -406,7 +406,7 @@ a.actions-header__location {
     height: 100%;
     top: -10%;
     left: 0%;
-    background: url('../img/stage2.avif') 50% 100% / cover no-repeat;
+    background: url('../img/stage2.jpg') 50% 100% / cover no-repeat;
     animation: stage 3s 0s ease forwards;
 }
 .parallax__cu {
@@ -1032,7 +1032,7 @@ a.actions-header__location {
     }
 }
 .show {
-    background: url('../img/bgc.jpg') center / cover no-repeat;
+    background: url('../img/bgc-min.jpg') center / cover no-repeat;
     padding-top: calc(15px + 30 * (100vw / 1280));
     padding-bottom: calc(15px + 15 * (100vw / 1280));
     position: relative;
@@ -1172,7 +1172,7 @@ a.actions-header__location {
 
 
 .content {
-    background: url('../img/bgc1.jpg');
+    background: url('../img/bgc1-min.jpg');
     position: relative;
     z-index: 10;
     padding-top: 2rem;
@@ -1206,7 +1206,7 @@ a.actions-header__location {
     margin-bottom: 0;
 }
 .gallery {
-    background: url('../img/bgc3.jpg');
+    background: url('../img/bgc3-min.jpg');
     position: relative;
     z-index: 2;
     padding: 1rem 0;
