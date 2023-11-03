@@ -167,8 +167,10 @@ a.actions-header__location {
     transform: rotate(-45deg);
     top: 9px;
 }
-.header__small-block{
-    display:none;
+@media (min-width: 580px) {  
+    .header__small-block{
+        display:none;
+    }
 }
 @media(max-width: 992px) {
     .menu-top-header__list li{
@@ -390,10 +392,8 @@ a.actions-header__location {
     flex: 1 0 100%;
     position: relative;
     overflow: hidden;
-    min-height: 100vw;
 }
 .parallax__list {
-    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
@@ -403,53 +403,11 @@ a.actions-header__location {
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: -10%;
     left: 0%;
     background: url('../img/stage2.avif') 50% 100% / cover no-repeat;
     animation: stage 3s 0s ease forwards;
-}
-.parallax__cu {
-    display: none;
-    position: absolute;
-    z-index: 999;
-    height: 110%;
-    width: 100%;
-    background: url('../img/redfull.png') 0 0 / cover no-repeat;
-    animation: up 2.5s 1s ease forwards;
-}
-.parallax__cl {
-    display: none;
-    position: absolute;
-    z-index: 11;
-    height: 100%;
-    animation: left 4s 3s ease forwards;
-}
-.parallax__cl img{
-    height: 120%;
-}
-.parallax__cr {
-    display: none;
-    position: absolute;
-    right: 0;
-    z-index: 11;
-    height: 100%;
-    animation: right 4s 3s ease forwards;
-}
-.parallax__cr img {
-    height: 120%;
-}
-.parallax__ch {
-    display: none;
-    position: absolute;
-    z-index: 4;
-    bottom: 0;
-    animation: chairs 4s 0s ease forwards;
-}
-.parallax__ch img {
-    display: none;
-    width: 100vw;
-    max-height: 20rem;
 }
 .parallax__logob {
     position: absolute;
@@ -539,7 +497,7 @@ a.actions-header__location {
 .outer-wrapper{
 	position: absolute;
     z-index: 1;
-    top: 15%;
+    top: 25%;
     width: 100%;
 	transform: translate(-80%,-80%);
 	animation: rotateAnimation 15s ease infinite;
@@ -552,8 +510,8 @@ a.actions-header__location {
 .img-container{
 	transform: rotate(45deg);
 	position: relative;
-	height: calc(250px + 200 * (100vw / 1280));
-	width: calc(250px + 200 * (100vw / 1280));
+	height: calc(400px + 100 * (100vw / 1280));
+	width: calc(400px + 100 * (100vw / 1280));
 	margin: 0 auto;
 	padding: 0;
 }
@@ -562,23 +520,23 @@ a.actions-header__location {
         top: 25%;
     }
     .img-container{
-        height: calc(150px + 200 * (100vw / 1280));
-        width: calc(150px + 200 * (100vw / 1280));
+        height: calc(300px + 250 * (100vw / 1280));
+        width: calc(300px + 250 * (100vw / 1280));
     }
 }
 @media (max-width: 800px) {
     .outer-wrapper{
-        top: 27%;
+        top: 25%;
     }
 }
 @media (max-width: 700px) {
     .outer-wrapper{
-        top: 30%;
+        top: 26%;
     }
 }
 @media (max-width: 610px) {
     .outer-wrapper{
-        top: 26%;
+        top: 24%;
     }
 }
 @media (max-width: 580px) {
@@ -586,8 +544,8 @@ a.actions-header__location {
         top: 30%;
     }
     .img-container{
-        height: 215px;
-        width: 215px;
+        height: calc(200px + 350 * (100vw / 1280));
+        width: calc(200px + 350 * (100vw / 1280));
     }
 }
 .img-rhombus{
@@ -653,12 +611,11 @@ a.actions-header__location {
 
 .buttons {
     width: 100%;
-    min-height: 100%;
-    height: 100%;
+    max-height: 100%;
     overflow: hidden;
     display: flex;
-    position: fixed;
-    top: 90%;
+    position: relative;
+    top: 85%;
     z-index: 1;
     justify-content: space-between;
     animation: opacity 3s ease forwards;
@@ -675,17 +632,25 @@ a.actions-header__location {
     }
 }
 .buttons-extra{
-    overflow: hidden;
-    display: flex;
-    position: fixed;
+    position: relative;
+    padding: 0.5rem;
     z-index: 1;
     justify-content: space-between;
-    top: calc(20px + 60 * (100vw / 1280));
-    left: -1%;
+    top: calc(20px + 70 * (100vw / 1280));
+    margin: 0 auto;
     animation: opacity 3s ease forwards;
 }
+.button__extra {
+    background: url('../img/xmas_btn.jpg') center / cover no-repeat;
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: center;
+}
 .button-1,
-.button-2,
 .button-3 {
     margin: 0 1rem;
     display: flex;
@@ -713,9 +678,6 @@ a.actions-header__location {
 }
 .wave-btn:hover .wave-btn__waves{
     top: -50px;
-}
-._extra{
-    width: 280px;
 }
 .wave-btn__text {
     color: #fff;
@@ -825,14 +787,12 @@ a.actions-header__location {
 .wave-btn__waves-4:hover{
     box-shadow: 0 0 20px rgba(119, 172, 40, 0.9);
 }
-.wave-btn__waves-5 {
-    background: url('../img/xmas_btn.jpg') 0 0 / cover no-repeat;
-}
 .wave-btn__text-5{
     color: rgb(218, 255, 216);
 }
 @media(max-width: 1060px) {
     .button-1,
+    .button-2,
     .button-3{
         display: block;
     }
@@ -843,13 +803,19 @@ a.actions-header__location {
         margin: 1rem 5rem;
     }
     .buttons-extra{
-        top: calc(20px + 75 * (100vw / 1280));
-        left: 25%;
+        display: block;
+        text-align: center;
+        top: calc(50px + 45 * (100vw / 1280));
     }
 }
 @media(max-width: 860px) {
     .wave-btn{
         margin: 1rem 3rem;
+    }
+}
+@media(max-width: 800px) {
+    .buttons-extra{
+        top: calc(60px + 45 * (100vw / 1280));
     }
 }
 @media(max-width: 740px) {
@@ -861,13 +827,12 @@ a.actions-header__location {
     .buttons{
         display: flex;
         flex-direction: column;
-        top: 70%;
+        top: 75%;
         justify-content: start;
         align-items: center;
     }
     .buttons-extra{
-        top: calc(45px + 60 * (100vw / 1280));
-        left: calc(0px + 55 * (100vw / 610));
+        top: calc(55px + 60 * (100vw / 1280));
     }
     .wave-btn{
         height: 40px;
@@ -877,63 +842,28 @@ a.actions-header__location {
     .wave-btn__waves{
         width: calc(220px + 500 * (100vw / 1280));
     }
+    ._extra{
+        display: flex;
+        width: calc(260px + 330 * (100vw / 610));
+    }
 }
 @media(max-width: 580px){
-    .outer-wrapper{
-        top: 32.5%;
+    .buttons{
+        top: 75%;
     }
     .buttons-extra{
-        top: calc(110px + 60 * (100vw / 1280));
-        left: calc(0px + 50 * (100vw / 580));
+        top: calc(135px + 20 * (100vw / 1280));
+    }
+    .button__extra {
+        padding: 0.7rem 1rem;
+        border-radius: 8px;
+        letter-spacing: 4px;
+        font-size: 1rem;
     }
 }
-@media(max-width: 510px){
-    .buttons-extra{
-        left: calc(0px + 20 * (100vw / 510));
-    }
-}
-@media(max-width: 460px){
-    .buttons-extra{
-        left: calc(0px + 10 * (100vw / 510));
-    }
-}
-@media(max-width: 430px){
-    .buttons-extra{
-        left: 0%;
-    }
-    ._extra{
-        width: calc(200px + 180 * (100vw / 430));
-    }
-}
-@media(max-width: 400px){
-    .buttons-extra{
-        left: -2%;
-    }
-    ._extra{
-        width: calc(200px + 180 * (100vw / 430));
-    }
-}
-@media(max-width: 370px){
-    .buttons-extra{
-        left: -4%;
-    }
-    ._extra{
-        width: calc(200px + 180 * (100vw / 400));
-    }
-}
-@media(max-width: 360px){
-    .buttons-extra{
-        left: -5%;
-    }
-}
-@media(max-width: 330px){
-    .buttons-extra{
-        left: -10%;
-    }
-}
-@media(max-width: 290px){
-    .buttons-extra{
-        left: -12%;
+@media(max-width: 350px){
+    .buttons{
+        top: 70%;
     }
 }
 
