@@ -964,11 +964,15 @@ a.actions-header__location {
 .product-card:hover {
     box-shadow: 0px 4px 20px rgba(255, 98, 0, 0.8);
 }
+.product-card__image-ibg{
+    background: url('../img/loading.gif') center / cover no-repeat;
+    min-height: 17rem;
+}
 .product-card__image-ibg img{
     justify-content: center;
     text-align: center;
     height: 17rem;
-    max-width: 17rem;
+    width: 100%;
     overflow: hidden;
     object-fit: cover;
 }
@@ -1227,6 +1231,7 @@ a.actions-header__location {
 .gallery__item{
     position: relative;
     padding: 0 0 85% 0;
+    background: url('../img/loading.gif');
 }
 .gallery__item img{
     position: absolute;
