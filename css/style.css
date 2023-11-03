@@ -933,7 +933,7 @@ a.actions-header__location {
 .product-card {
     height: 100%;
     background-color: #fff;
-    max-width: 17rem;
+    min-width: 17rem;
     margin: 0 auto;
     display: grid;
     grid-template-rows: auto 1fr;
@@ -1287,12 +1287,12 @@ a.actions-header__location {
 
 
 
-
 .footer__sections{
     width: 100%;
     background-color: #141414;
     position: relative;
     z-index: 5;
+
 }
 .footer__body {
     padding: 3rem 0;
