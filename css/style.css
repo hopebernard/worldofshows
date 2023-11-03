@@ -406,7 +406,7 @@ a.actions-header__location {
     height: 100%;
     top: -10%;
     left: 0%;
-    background: url('../img/stage2.jpg') 50% 100% / cover no-repeat;
+    background: url('../img/stage2.avif') 50% 100% / cover no-repeat;
     animation: stage 3s 0s ease forwards;
 }
 .parallax__cu {
