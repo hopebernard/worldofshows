@@ -8,7 +8,7 @@ burgerIcon.addEventListener('click', function() {
     burgerMenu.classList.toggle('_burger-menu-active');
 })
 
-
+/*
 const parent_original = document.querySelector('.menu-top-header__rows');
 const parent = document.querySelector('.menu__body');
 const item = document.querySelector('.menu-top-header__list');
@@ -34,7 +34,7 @@ window.onresize = function() {
 window.onload = function() {
     move();
 }
-
+*/
 
 
 

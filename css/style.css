@@ -40,6 +40,7 @@ h1,h2, h3, h4, h5, h6{font-style: inherit;}
     min-height: 100%;
     overflow: hidden;
     display: flex;
+    min-height: 50px;
 }
 
 .header{
@@ -59,7 +60,6 @@ h1,h2, h3, h4, h5, h6{font-style: inherit;}
     }
 }
 ._container{
-    min-height: 100%;
     margin: 0 auto;
     max-width: 100%;
     min-height: 50px;
@@ -171,6 +171,9 @@ a.actions-header__location {
     display:none;
 }
 @media(max-width: 992px) {
+    .menu-top-header__list li{
+        display: none;
+    }
     .menu-top-header__rows{
         padding: 1rem 1.5rem 0.5rem;
     }
@@ -183,7 +186,7 @@ a.actions-header__location {
     a.actions-header__location{
         margin: 0;
     }
-    .menu-top-header__list{
+    .menu-top-header__list-1{
         position: relative;
         display: block;
         font-size: 4rem;
