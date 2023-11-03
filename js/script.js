@@ -34,7 +34,7 @@ window.onresize = function() {
 window.onload = function() {
     move();
 }
-*/
+
 
 
 
@@ -71,7 +71,7 @@ window.addEventListener('resize', function(event) {
         }
     }
 });
-
+*/
 
 
 

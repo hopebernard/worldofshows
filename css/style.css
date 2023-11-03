@@ -312,6 +312,9 @@ a.actions-header__location {
         padding-left: 0;
         padding-right: 0;
     }
+    .actions-header{
+        display: none;
+    }
     .header__small-block{
         position: relative;
         left: -10%;
@@ -329,11 +332,11 @@ a.actions-header__location {
     .fa-location-dot{
         display: none;
     }
-    .body-header__actions{
+    .body-header__actions-1{
         margin: 0 auto;
         padding: 0.5rem;
     }
-    .actions-header{
+    .actions-header-1{
         display: flex;
         flex-direction: column;
         gap: 0;
