@@ -994,6 +994,7 @@ a.actions-header__location {
     color: white;
     font-size: 1.2rem;
     background-color: orange;
+    text-align: center;
 }
 .button:hover{
     box-shadow: 0px 4px 20px rgba(255, 213, 0, 0.8);
