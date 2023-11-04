@@ -379,7 +379,7 @@ a.actions-header__location {
 
 .page {
     position: absolute;
-    width: 100%;
+    width: 125%;
     height: 100%;
     top: 0;
     left: 0;
@@ -388,27 +388,16 @@ a.actions-header__location {
     flex-direction: column;
     min-height: 360px;
 }
+
 .parallax {
-    flex: 1 0 100%;
+    background: url('../img/stage2.avif') center / cover no-repeat;
+    padding-top: calc(15px + 30 * (100vw / 1280));
+    padding-bottom: calc(15px + 15 * (100vw / 1280));
     position: relative;
-    overflow: hidden;
-}
-.parallax__list {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-.parallax__bg {
-    position: absolute;
     z-index: 1;
-    width: 100%;
-    height: 100vh;
-    top: -10%;
-    left: 0%;
-    background: url('../img/stage2.avif') 50% 100% / cover no-repeat;
-    animation: stage 3s 0s ease forwards;
+    min-height: 50rem;
 }
+
 .parallax__logob {
     position: absolute;
     z-index: 8;
@@ -495,9 +484,9 @@ a.actions-header__location {
 
 
 .outer-wrapper{
-	position: absolute;
+	position: relative;
     z-index: 1;
-    top: 25%;
+    padding: 9rem 0;
     width: 100%;
 	transform: translate(-80%,-80%);
 	animation: rotateAnimation 15s ease infinite;
@@ -510,42 +499,27 @@ a.actions-header__location {
 .img-container{
 	transform: rotate(45deg);
 	position: relative;
-	height: calc(400px + 100 * (100vw / 1280));
-	width: calc(400px + 100 * (100vw / 1280));
+	height: calc(300px + 100 * (100vw / 1280));
+	width: calc(300px + 100 * (100vw / 1280));
 	margin: 0 auto;
 	padding: 0;
 }
 @media (max-width: 1060px) {
     .outer-wrapper{
-        top: 25%;
+        padding: 9rem 0;
     }
     .img-container{
         height: calc(300px + 250 * (100vw / 1280));
         width: calc(300px + 250 * (100vw / 1280));
     }
 }
-@media (max-width: 800px) {
-    .outer-wrapper{
-        top: 25%;
-    }
-}
-@media (max-width: 700px) {
-    .outer-wrapper{
-        top: 26%;
-    }
-}
-@media (max-width: 610px) {
-    .outer-wrapper{
-        top: 24%;
-    }
-}
 @media (max-width: 580px) {
     .outer-wrapper{
-        top: 30%;
+        padding: 13rem 0;
     }
     .img-container{
-        height: calc(200px + 350 * (100vw / 1280));
-        width: calc(200px + 350 * (100vw / 1280));
+        height: calc(270px + 100 * (100vw / 1280));
+        width: calc(270px + 100 * (100vw / 1280));
     }
 }
 .img-rhombus{
@@ -611,11 +585,10 @@ a.actions-header__location {
 
 .buttons {
     width: 100%;
-    max-height: 100%;
-    overflow: hidden;
+    height: 100%;
     display: flex;
-    position: relative;
-    top: 85%;
+    position: absolute;
+    top: 86%;
     z-index: 1;
     justify-content: space-between;
     animation: opacity 3s ease forwards;
@@ -631,12 +604,12 @@ a.actions-header__location {
         opacity: 1;
     }
 }
-.buttons-extra{
-    position: relative;
+.button-2{
+    position: absolute;
     padding: 0.5rem;
-    z-index: 1;
+    z-index: 10;
     justify-content: space-between;
-    top: calc(20px + 70 * (100vw / 1280));
+    top: -75%;
     margin: 0 auto;
     animation: opacity 3s ease forwards;
 }
@@ -797,15 +770,16 @@ a.actions-header__location {
         display: block;
     }
     .buttons{
-        top: 75%;
+        bottom: 500px;
+        top: 78%;
     }
     .wave-btn{
         margin: 1rem 5rem;
     }
-    .buttons-extra{
+    .button-2{
         display: block;
         text-align: center;
-        top: calc(50px + 45 * (100vw / 1280));
+        top: -70%;
     }
 }
 @media(max-width: 860px) {
@@ -814,8 +788,11 @@ a.actions-header__location {
     }
 }
 @media(max-width: 800px) {
-    .buttons-extra{
-        top: calc(60px + 45 * (100vw / 1280));
+    .button__extra {
+        padding: 0.7rem 1.2rem;
+        border-radius: 8px;
+        letter-spacing: 4px;
+        font-size: 1rem;
     }
 }
 @media(max-width: 740px) {
@@ -827,12 +804,15 @@ a.actions-header__location {
     .buttons{
         display: flex;
         flex-direction: column;
-        top: 75%;
+        top: 70%;
         justify-content: start;
         align-items: center;
     }
-    .buttons-extra{
-        top: calc(55px + 60 * (100vw / 1280));
+    .button-2{
+        top: -62%;
+        margin: 0 auto;
+        display: block;
+        align-items: center;
     }
     .wave-btn{
         height: 40px;
@@ -842,28 +822,18 @@ a.actions-header__location {
     .wave-btn__waves{
         width: calc(220px + 500 * (100vw / 1280));
     }
-    ._extra{
-        display: flex;
-        width: calc(260px + 330 * (100vw / 610));
-    }
 }
 @media(max-width: 580px){
     .buttons{
         top: 75%;
     }
-    .buttons-extra{
-        top: calc(135px + 20 * (100vw / 1280));
-    }
-    .button__extra {
-        padding: 0.7rem 1rem;
-        border-radius: 8px;
-        letter-spacing: 4px;
-        font-size: 1rem;
+    .button-2{
+        top: -59%;
     }
 }
 @media(max-width: 350px){
     .buttons{
-        top: 70%;
+
     }
 }
 
