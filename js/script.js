@@ -86,6 +86,10 @@ function initSliders() {
     bildSliders();
     if (document.querySelector('.show__slider')) {
         new Swiper('.show__slider', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
@@ -94,27 +98,27 @@ function initSliders() {
             observer: true,
             observeParents: true,
             speed: 800, 
-            pagination: {
-                el: '.show__dotts',
-                clickable: true,
-            },
+//            pagination: {
+//                el: '.swiper-pagination',
+//                clickable: true,
+//            },
+            spaceBetween: 30,
             breakpoints: {
-                2800: {
-                    slidesPerView: 1,
-                    spaceBetween:20,
-                    autoHeight: true,
-                },
-                605: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                1020: {
+                710: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
                 },
-                1370: {
+                780: {
+                    slidesPerView: 1,
+                },
+                1200: {
+                    slidesPerView: 2,
+                },
+                1590: {
                     slidesPerView: 3,
-                    spaceBetween: 20,
+                },
+                2220: {
+                    slidesPerView: 4,
+                    autoHeight: true,
                 },
             }
         });
