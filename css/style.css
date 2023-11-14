@@ -853,7 +853,7 @@ a.actions-header__location {
     gap: 2rem;
 }
 .swiper {
-    max-height: 100vh;
+    max-height: 100%;
     padding: 0 1.5rem;
     margin: -1rem;
 }
@@ -881,12 +881,12 @@ a.actions-header__location {
 }
 .product-card__image-ibg{
     background: url('../img/loading.gif') center / cover no-repeat;
-    min-height: 17rem;
+    min-height: 22rem;
 }
 .product-card__image-ibg img{
     justify-content: center;
     text-align: center;
-    height: 17rem;
+    height: 22rem;
     width: 100%;
     overflow: hidden;
     object-fit: cover;
