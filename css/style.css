@@ -278,9 +278,10 @@ a.lang__pass2:hover{
         transition: all 0.5s ease 0s;
     }
     .fa-solid.fa-chevron-up {
+        font-size: 1rem;
         transform: rotate(180deg);
         position: relative;
-        padding: 0rem 0.5rem;
+        padding: 0.25rem 0.5rem;
         top: 0px;
         transition: all 0.5s ease 0s;
     }
@@ -355,8 +356,11 @@ a.lang__pass2:hover{
         position: relative;
         left: 0%;
     }
+    .menu-lang__list{
+        padding: 0.75rem 0 0 0;
+    }
 }
-@media(max-width: 800px) {
+@media(max-width: 860px) {
     .actions-header{
         display: block;
     }

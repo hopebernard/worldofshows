@@ -1,5 +1,5 @@
 .main-product {
-    padding-top: calc(20px + 60 * (100vw / 1280));
+    padding-top: calc(40px + 70 * (100vw / 1280));
     width: 100%;
     display: grid;
     align-items: start;
@@ -130,6 +130,13 @@
     font-size: 1.2rem;
     line-height: 1.4rem;
 }
+a.table-product__label1{
+    color: rgb(78, 205, 255);
+    font-weight: 600;
+}
+.table-product__label1:hover{
+    text-decoration: underline;
+}
 .actions-product__contact{
     font-weight: 600;
     color: rgb(78, 205, 255);
@@ -184,7 +191,7 @@
         gap: 1rem;
     }
     .thumbs-images{
-        padding: 1.5rem 0 0 2rem;
+        padding: 1.5rem 0 0 3rem;
         max-height: 700px;
     }
     .thumbs-images__slide-ibg img{
@@ -243,7 +250,7 @@
         height: 100px;
     }
 }
-@media(max-width: 360px) {
+@media(max-width: 350px) {
     .thumbs-images {
         padding-top: 0.8rem;
     }
