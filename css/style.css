@@ -862,7 +862,8 @@ a.lang__pass2:hover{
         transform: translate3d(-50%,-96%,0) rotate(360deg) scale(1);
     }
 }
-._long{
+._long,
+a._long{
     letter-spacing: 2px;
 }
 .wave-btn__waves-1 {

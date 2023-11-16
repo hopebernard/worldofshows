@@ -1,6 +1,6 @@
 .content__price{
     background: url('../img/pricebcg.jpg') 50% 100% / cover no-repeat;
-    padding: 2.5rem 0 1rem;
+    padding-top: calc(30px + 50 * (100vw / 1280));
 }
 .price__body{
     background-color: #4e00006c;
@@ -64,6 +64,11 @@
 .table-product5{
     color: rgb(0, 103, 17);
     background-color: rgba(128, 255, 114, 0.79);
+}
+@media (max-width: 580px) {
+    .content__price{
+        padding-top: 4.5rem;
+    }
 }
 @media (max-width: 410px) {
     .price__body{
