@@ -1,0 +1,23 @@
+.content{
+    padding-top: calc(40px + 100 * (100vw / 1280));
+    padding-bottom: calc(40px + 100 * (100vw / 1280));
+    background: url('../img/about.jpg');
+}
+._container-d{
+    width: 90%;
+    margin: 0 auto;
+}
+.text__body{
+    background-color: rgba(62, 34, 34, 0.805);
+    border-radius: 20px;
+    padding: 1rem;
+    letter-spacing: 2px;
+}
+.text__title{
+    line-height: 2.3rem;
+}
+@media (max-width: 580px) {
+    .content{
+        padding-top: 9rem;
+    }
+}
