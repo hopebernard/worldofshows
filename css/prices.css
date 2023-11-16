@@ -1,9 +1,10 @@
 .content__price{
     background: url('../img/pricebcg.jpg') 50% 100% / cover no-repeat;
+    padding: 2.5rem 0 1rem;
 }
 .price__body{
     background-color: #4e00006c;
-    margin-top: 9rem;
+    margin-top: 3rem;
     color: rgb(251, 255, 165);
     border-radius: 20px;
     padding: 2rem;
@@ -42,7 +43,7 @@
 .body-product__table {
     border-radius: 10px;
     padding: 1rem;
-    max-width: 20rem;
+    max-width: 50rem;
 }
 .table-product1{
     color: rgb(224, 36, 36);
