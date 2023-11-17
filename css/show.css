@@ -146,11 +146,11 @@ a.table-product__label1{
 }
 .swiper-button-next{
     top: 4rem;
-    padding: 12rem 2rem 12rem 10rem;
+    padding: 12rem 2rem 12rem 2rem;
 }
 .swiper-button-prev{
     top: 4rem;
-    padding: 12rem 10rem 12rem 1rem;
+    padding: 12rem 2rem 12rem 1rem;
 }
 .swiper-button-next,
 .swiper-button-prev{
