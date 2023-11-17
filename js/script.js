@@ -92,8 +92,10 @@ function initSliders() {
             },
             autoplay: {
                 delay: 3000,
+                pauseOnMouseEnter: true,
                 disableOnInteraction: false,
             },
+            pauseOnMouseEnter: true,
             loop: true,
             observer: true,
             observeParents: true,
@@ -103,6 +105,7 @@ function initSliders() {
 //                clickable: true,
 //            },
             spaceBetween: 30,
+            allowTouchMove: true,
             breakpoints: {
                 710: {
                     slidesPerView: 2,
@@ -130,14 +133,23 @@ function initSliders() {
             observeParents: true,
             spaceBetween: 10,
             slidesPerView: 4,
-            speed: 800, 
+            speed: 800,
+            autoplay: {
+                delay: 3000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+            },
+            pauseOnMouseEnter: true,
+            slideToClickedSlide: true,
+            initialSlide: 1,
+            allowTouchMove: true,
             breakpoints: {
                 310: {
                     direction: 'horizontal',
                     spaceBetween: 10,
                     slidesPerView: 4,
                 },
-                850: {
+                860: {
                     direction: 'vertical',
                     spaceBetween: 10,
                     slidesPerView: 4,
@@ -150,10 +162,16 @@ function initSliders() {
             }
         });
         new Swiper('.images-product__slider', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             autoplay: {
                 delay: 3000,
+                pauseOnMouseEnter: true,
                 disableOnInteraction: false,
             },
+            pauseOnMouseEnter: true,
             thumbs: {
                 swiper: thumbsSwiper,
             },
@@ -163,6 +181,7 @@ function initSliders() {
             slidesPerView: 1,
             spaceBetween: 20,
             speed: 800, 
+            allowTouchMove: true,
         });
     }
 };
