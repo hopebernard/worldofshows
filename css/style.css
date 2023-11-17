@@ -870,6 +870,16 @@ a.lang__pass2:hover{
 a._long{
     letter-spacing: 2px;
 }
+._long-s,
+a._long-s{
+    letter-spacing: 1px;
+    font-size: 0.91rem;
+}
+._long-x,
+a._long-x{
+    letter-spacing: 4px;
+    line-height: 1.3rem;
+}
 .wave-btn__waves-1 {
     background-color: orange;
 }
